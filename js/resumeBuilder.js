@@ -103,13 +103,13 @@ var education = {
         if (education.onlineCourses.length > 0) {
             $(".education-entry:last").append(HTMLonlineClasses);
 
-            for (var i = 0; i < education.onlineCourses.length; i++) {
-                var formattedOntitle = HTMLonlineTitle.replace("%data%", education.onlineCourses[i].title);
-                var formattedOnSchool = HTMLonlineSchool.replace("%data%", education.onlineCourses[i].school);
+            for (var a = 0; a < education.onlineCourses.length; a++) {
+                var formattedOntitle = HTMLonlineTitle.replace("%data%", education.onlineCourses[a].title);
+                var formattedOnSchool = HTMLonlineSchool.replace("%data%", education.onlineCourses[a].school);
                 $(".education-entry:last").append(formattedOntitle + formattedOnSchool);
-                var formattedOnDates = HTMLonlineDates.replace("%data%", education.onlineCourses[i].dates);
+                var formattedOnDates = HTMLonlineDates.replace("%data%", education.onlineCourses[a].dates);
                 $(".education-entry:last").append(formattedOnDates);
-                var formattedOnURL = HTMLonlineURL.replace("%data%", education.onlineCourses[i].url);
+                var formattedOnURL = HTMLonlineURL.replace("%data%", education.onlineCourses[a].url);
                 $(".education-entry:last").append(formattedOnURL);
 
             }
